@@ -89,13 +89,57 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Define section functions
-
 def show_home():
-    st.markdown("<h1 class='title'>🌟 Elevate Your Mindset & Thrive 🚀</h1>", unsafe_allow_html=True)
-    st.markdown(
-        "<p style='text-align: center; font-size:20px;'>Welcome to your personal growth hub. Use the sidebar to explore daily inspiration, goal setting, productivity challenges, and more!</p>", 
-        unsafe_allow_html=True
-    )
+    st.markdown("""
+    <style>
+        .home-heading {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(90deg, #4A90E2, #50E3C2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .home-heading:hover {
+            transform: scale(1.05);
+        }
+        .home-box {
+            border: 2px solid #f7dc6f; /* Light yellow border */
+            background-color: #fcf3cf; /* Pale yellow background */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+        }
+        .home-box p {
+            font-size: 22px;
+            color: #f1c40f; /* Bright yellow text */
+            transition: color 0.3s ease;
+        }
+        .home-box p:hover {
+            color: #f39c12;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    st.markdown("<h1 class='home-heading'>🌟 Elevate Your Mindset & Thrive 🚀</h1>", unsafe_allow_html=True)
+    
+    st.markdown("""
+    <div class='home-box'>
+        <p>
+            Welcome to your personal growth hub, where inspiration meets action!
+            Dive into daily motivational quotes, goal-setting exercises, productivity challenges,
+            interactive quizzes, and a progress tracker – all designed to empower your journey.
+            Unleash your potential, cultivate a growth mindset, and embrace every opportunity
+            to succeed. Let's embark on this transformative journey together!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+
 
 def show_daily_inspiration():
     st.markdown("<h2 class='subheader'>💡 Daily Inspiration</h2>", unsafe_allow_html=True)
@@ -274,10 +318,22 @@ elif app_mode == "Progress Tracker":
 
 # Footer with updated color
 st.markdown("""
-<div class='footer'>
-🚀 Believe in yourself—every challenge you overcome, every step you take, and every lesson you learn shapes your incredible journey! ❤️🌟<br>
-<strong>Created by Aamna Ashraf Rajput</strong>
+<div class="footer">
+  <h2 style="font-size: 32px; margin: 10px 0; color: #ffffff;">Reach New Heights Together!</h2>
+  <p style="font-size: 20px; margin: 10px 0; color: #ffffff;">Empowering Growth with Elevate Mindset AI</p>
 </div>
+<style>
+.footer {
+  width: 100%;
+  background: linear-gradient(90deg, #4A90E2, #50E3C2); /* Blue-green gradient */
+  padding: 40px 0;
+  text-align: center;
+  transition: background 0.5s ease;
+}
+.footer:hover {
+  background: linear-gradient(90deg, #50E3C2, #4A90E2);
+}
+</style>
 """, unsafe_allow_html=True)
 
 
