@@ -170,7 +170,7 @@ with st.sidebar:
 def show_home():
     st.markdown(f"""
     <div class='home-container'>
-        <h1 style='font-size: 48px; margin-bottom: 20px;'>🌟 Welcome {st.session_state.username if st.session_state.username else ""} to Elevate Mindset AI 🚀</h1>
+        <h1 style='font-size: 40px; margin-bottom: 20px;'>🌟 Welcome {st.session_state.username if st.session_state.username else ""} to Elevate Mindset AI 🚀</h1>
         <p style='font-size: 20px;'>Your personal growth companion for mindset elevation and productivity enhancement</p>
     </div>
     """, unsafe_allow_html=True)
