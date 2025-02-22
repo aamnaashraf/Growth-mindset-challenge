@@ -5,8 +5,6 @@ import plotly.express as px
 from fpdf import FPDF
 import base64
 from fpdf import FPDF
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
 from io import BytesIO
 
 # Set page configuration
